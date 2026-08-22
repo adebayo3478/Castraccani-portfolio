@@ -1,229 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Castraccani — Growth, Distribution & Ecosystem</title>
+  <title>Castraccani — Growth, Community & Distribution</title>
 
   <meta
     name="description"
-    content="Castraccani works across growth, community, content, distribution and ecosystem development for Web3 and emerging technology products."
-  >
+    content="Castraccani works across growth, community, content, distribution and ecosystem development in Web3 and AI."
+  />
 
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* =========================================================
-       PORTFOLIO CONTENT
-       ========================================================= */
-
-    .metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-      margin: 40px 0 80px;
-    }
-
-    .metric {
-      padding: 24px;
-      border: 1px solid var(--border, #262626);
-      background: var(--surface, #0d0d0d);
-    }
-
-    .metric-number {
-      display: block;
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: -1.5px;
-      margin-bottom: 8px;
-    }
-
-    .metric-label {
-      display: block;
-      color: var(--muted, #8b8b86);
-      font-size: 13px;
-      line-height: 1.5;
-    }
-
-    .section {
-      padding: 80px 0;
-      border-top: 1px solid var(--border, #262626);
-    }
-
-    .section-label {
-      color: var(--muted, #8b8b86);
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-
-    .section-title {
-      font-size: clamp(32px, 5vw, 56px);
-      line-height: 1;
-      letter-spacing: -2px;
-      max-width: 800px;
-      margin-bottom: 50px;
-    }
-
-    /* Selected work */
-
-    .work-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-
-    .work-card {
-      border: 1px solid var(--border, #262626);
-      background: var(--surface, #0d0d0d);
-      padding: 32px;
-    }
-
-    .work-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 20px;
-      margin-bottom: 28px;
-    }
-
-    .work-name {
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: -1px;
-    }
-
-    .work-role {
-      color: var(--muted, #8b8b86);
-      font-size: 13px;
-      margin-top: 7px;
-    }
-
-    .work-metric {
-      font-size: 24px;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .work-description {
-      max-width: 780px;
-      color: var(--muted, #8b8b86);
-      line-height: 1.7;
-      margin-bottom: 24px;
-    }
-
-    .work-list {
-      margin: 0 0 28px;
-      padding-left: 20px;
-    }
-
-    .work-list li {
-      margin-bottom: 9px;
-      line-height: 1.6;
-    }
-
-    .proof-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-
-    .proof-link {
-      display: inline-block;
-      font-size: 13px;
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-
-    /* Proof / evidence */
-
-    .proof-note {
-      margin-top: 18px;
-      color: var(--muted, #8b8b86);
-      font-size: 12px;
-      line-height: 1.6;
-    }
-
-    /* About */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-    }
-
-    .about-text {
-      color: var(--muted, #8b8b86);
-      line-height: 1.8;
-      max-width: 650px;
-      margin-bottom: 20px;
-    }
-
-    /* Contact */
-
-    .contact-box {
-      border: 1px solid var(--border, #262626);
-      padding: 32px;
-      background: var(--surface, #0d0d0d);
-    }
-
-    /* Responsive */
-
-    @media (max-width: 800px) {
-      .metrics-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .work-top {
-        flex-direction: column;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .metrics-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .metric {
-        padding: 18px;
-      }
-
-      .metric-number {
-        font-size: 25px;
-      }
-
-      .work-card {
-        padding: 24px;
-      }
-
-      .work-name {
-        font-size: 25px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 
 <body>
 
-  <!-- =======================================================
-       NAVIGATION
-       ======================================================= -->
+  <!-- NAVIGATION -->
+  <header class="site-nav">
+    <div class="nav-inner">
 
-  <header class="nav">
-    <div class="container nav-inner">
-
-      <a href="#" class="logo">
-        CASTRACCANI<span>.</span>
+      <a href="#" class="site-logo">
+        CASTRACCANI
       </a>
 
-      <nav>
+      <nav class="nav-links">
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -233,10 +34,9 @@
         href="https://x.com/0xcastra"
         target="_blank"
         rel="noopener noreferrer"
-        class="nav-status"
+        class="nav-link"
       >
-        <span></span>
-        Open to work
+        X ↗
       </a>
 
     </div>
@@ -245,50 +45,79 @@
 
   <main>
 
-    <!-- =====================================================
-         HERO
-         ===================================================== -->
-
+    <!-- HERO -->
     <section class="hero">
+      <div class="hero-inner">
 
-      <div class="container">
-
-        <div class="eyebrow">
-          WEB3 / GROWTH / COMMUNITY / ECOSYSTEM
-        </div>
-
-        <h1>
-          I build the
-          <span>distribution layer.</span>
-        </h1>
-
-        <p class="hero-description">
-          I work with Web3 teams on growth, community, content,
-          partnerships and ecosystem activation — helping useful
-          products reach the people who can actually use them.
+        <p class="eyebrow">
+          GROWTH · COMMUNITY · DISTRIBUTION
         </p>
 
-        <div class="hero-actions">
+        <h1>
+          I help good products
+          <em>find their people.</em>
+        </h1>
 
-          <a href="#work" class="button button-primary">
-            Selected work ↓
-          </a>
+        <div class="hero-bottom">
 
-          <a
-            href="https://x.com/0xcastra"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button"
-          >
-            X / @0xcastra
-          </a>
+          <p class="hero-copy">
+            I work across Web3 and emerging technology,
+            helping teams turn products into communities,
+            conversations and distribution.
+          </p>
+
+          <div class="hero-links">
+            <a href="#work">Selected work ↓</a>
+
+            <a
+              href="https://www.linkedin.com/in/ayoola-qayyum-9b4094118/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+            <a href="mailto:castraccanii@gmail.com">
+              Email ↗
+            </a>
+          </div>
 
         </div>
 
-        <div class="hero-meta">
-          <span>Nigeria · Remote</span>
-          <span>4+ years in Web3</span>
-          <span>1+ year working with AI</span>
+      </div>
+    </section>
+
+
+    <!-- CURRENTLY -->
+    <section class="intro-section">
+
+      <div class="section-label">
+        Currently
+      </div>
+
+      <div class="intro-grid">
+
+        <div>
+          <h2>
+            Building, growing and
+            distributing across
+            Web3 and AI.
+          </h2>
+        </div>
+
+        <div class="intro-text">
+
+          <p>
+            My work sits at the intersection of community,
+            content, distribution and ecosystem growth.
+          </p>
+
+          <p>
+            I enjoy working with early-stage teams where the
+            product is strong but the right people haven't
+            discovered it yet.
+          </p>
+
         </div>
 
       </div>
@@ -296,614 +125,523 @@
     </section>
 
 
-    <!-- =====================================================
-         KEY NUMBERS
-         ===================================================== -->
+    <!-- SELECTED WORK -->
+    <section id="work" class="work-section">
 
-    <section class="container">
-
-      <div class="metrics-grid">
-
-        <div class="metric">
-          <span class="metric-number">$10K</span>
-          <span class="metric-label">
-            Community growth grant led
-          </span>
-        </div>
-
-        <div class="metric">
-          <span class="metric-number">1.1K+</span>
-          <span class="metric-label">
-            Flare Africa X followers
-          </span>
-        </div>
-
-        <div class="metric">
-          <span class="metric-number">249</span>
-          <span class="metric-label">
-            Flare Africa Telegram members
-          </span>
-        </div>
-
-        <div class="metric">
-          <span class="metric-number">1.9K+</span>
-          <span class="metric-label">
-            ShipGuild X followers
-          </span>
-        </div>
-
-        <div class="metric">
-          <span class="metric-number">532</span>
-          <span class="metric-label">
-            Capella X followers
-          </span>
-        </div>
-
-        <div class="metric">
-          <span class="metric-number">341+</span>
-          <span class="metric-label">
-            Capella users
-          </span>
-        </div>
-
-        <div class="metric">
-          <span class="metric-number">143K+</span>
-          <span class="metric-label">
-            Flare Africa impressions in reported period
-          </span>
-        </div>
-
-        <div class="metric">
-          <span class="metric-number">10K+</span>
-          <span class="metric-label">
-            Flare Africa engagements in reported period
-          </span>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         SELECTED WORK
-         ===================================================== -->
-
-    <section id="work" class="section">
-
-      <div class="container">
+      <div class="section-heading">
 
         <div class="section-label">
           01 / Selected work
         </div>
 
-        <h2 class="section-title">
-          Building communities, distribution
-          and ecosystems around products.
+        <h2>
+          A few things I've helped
+          build and grow.
         </h2>
 
-
-        <div class="work-grid">
-
-
-          <!-- =================================================
-               FLARE AFRICA
-               ================================================= -->
-
-          <article class="work-card">
-
-            <div class="work-top">
-
-              <div>
-
-                <div class="work-name">
-                  Flare Africa
-                </div>
-
-                <div class="work-role">
-                  Founder · Community Lead · Project Manager
-                </div>
-
-              </div>
-
-              <div class="work-metric">
-                $10K grant
-              </div>
-
-            </div>
-
-
-            <p class="work-description">
-              Built and managed a grassroots Flare ecosystem
-              initiative focused on community growth, developer
-              onboarding, education, events and ecosystem adoption
-              across Africa.
-            </p>
-
-
-            <ul class="work-list">
-
-              <li>
-                Led a $10K Community Growth Grant programme.
-              </li>
-
-              <li>
-                Grew the Flare Africa X community to 1,100+ followers
-                and the Telegram community to 249 members.
-              </li>
-
-              <li>
-                Built and coordinated community initiatives spanning
-                education, developer activation and ecosystem growth.
-              </li>
-
-              <li>
-                Organised developer sessions, X Spaces, IRL meetups
-                and community education programmes.
-              </li>
-
-              <li>
-                Supported the Flare developer ecosystem through
-                bootcamps, Dev Hours, bounties and builder-focused
-                initiatives.
-              </li>
-
-              <li>
-                Supported the Flare track at ETHNile and helped connect
-                African builders with the wider ecosystem.
-              </li>
-
-            </ul>
-
-
-            <div class="proof-links">
-
-              <a
-                href="https://x.com/FlareAfrica_"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="proof-link"
-              >
-                X / Flare Africa →
-              </a>
-
-              <a
-                href="https://flareafrica.xyz"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="proof-link"
-              >
-                Website →
-              </a>
-
-            </div>
-
-            <p class="proof-note">
-              Community analytics shown in the portfolio include
-              143K+ impressions and 10K+ engagements during the
-              reported analytics period.
-            </p>
-
-          </article>
-
-
-          <!-- =================================================
-               SHIPGUILD
-               ================================================= -->
-
-          <article class="work-card">
-
-            <div class="work-top">
-
-              <div>
-
-                <div class="work-name">
-                  ShipGuild
-                </div>
-
-                <div class="work-role">
-                  Growth · Content · Community · Distribution
-                </div>
-
-              </div>
-
-              <div class="work-metric">
-                5K+ views
-              </div>
-
-            </div>
-
-
-            <p class="work-description">
-              Worked across ShipGuild's builder and creator ecosystem,
-              helping turn technical and early-stage Web3 ideas into
-              accessible content, conversations and distribution.
-            </p>
-
-
-            <ul class="work-list">
-
-              <li>
-                Supported content strategy and social distribution
-                around Web3, AI and emerging products.
-              </li>
-
-              <li>
-                Contributed to livestream programming and community
-                engagement.
-              </li>
-
-              <li>
-                Helped translate technical topics into accessible
-                conversations for broader audiences.
-              </li>
-
-              <li>
-                Supported creator-focused distribution and ecosystem
-                growth.
-              </li>
-
-              <li>
-                Contributed to a platform whose X account has grown
-                to 1,900+ followers.
-              </li>
-
-            </ul>
-
-
-            <div class="proof-links">
-
-              <a
-                href="https://x.com/ShipGuild"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="proof-link"
-              >
-                X / ShipGuild →
-              </a>
-
-              <a
-                href="https://theshipguild.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="proof-link"
-              >
-                ShipGuild →
-              </a>
-
-            </div>
-
-            <p class="proof-note">
-              Selected livestreams have reached 5K+ views.
-            </p>
-
-          </article>
-
-
-          <!-- =================================================
-               CAPELLA
-               ================================================= -->
-
-          <article class="work-card">
-
-            <div class="work-top">
-
-              <div>
-
-                <div class="work-name">
-                  Capella
-                </div>
-
-                <div class="work-role">
-                  Core Contributor · Community · Ecosystem · Growth
-                </div>
-
-              </div>
-
-              <div class="work-metric">
-                341+ users
-              </div>
-
-            </div>
-
-
-            <p class="work-description">
-              Helped grow Capella, a decentralized creator platform
-              focused on creating, learning, collaborating and
-              monetizing content onchain.
-            </p>
-
-
-            <ul class="work-list">
-
-              <li>
-                Directed community-facing growth and ecosystem
-                initiatives.
-              </li>
-
-              <li>
-                Built creator-focused campaigns and communication
-                around the product.
-              </li>
-
-              <li>
-                Started and supported creator visibility initiatives,
-                including Creator Spotlight.
-              </li>
-
-              <li>
-                Helped strengthen community engagement and product
-                distribution across the ecosystem.
-              </li>
-
-              <li>
-                Supported Capella's growth to 532 X followers and
-                341+ users.
-              </li>
-
-            </ul>
-
-
-            <div class="proof-links">
-
-              <a
-                href="https://x.com/capella_dApp"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="proof-link"
-              >
-                X / Capella →
-              </a>
-
-              <a
-                href="https://capellaapp.xyz"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="proof-link"
-              >
-                Capella →
-              </a>
-
-            </div>
-
-            <p class="proof-note">
-              Community growth update: Capella grew from fewer than
-              90 users to 341+ users.
-            </p>
-
-          </article>
-
-
-        </div>
-
       </div>
 
-    </section>
 
+      <!-- FLARE AFRICA -->
+      <article class="project">
 
-    <!-- =====================================================
-         ABOUT
-         ===================================================== -->
-
-    <section id="about" class="section">
-
-      <div class="container">
-
-        <div class="section-label">
-          02 / About
-        </div>
-
-        <div class="about-grid">
+        <div class="project-header">
 
           <div>
+            <p class="project-number">01</p>
 
-            <h2 class="section-title">
-              Growth is more than posting.
-            </h2>
+            <h3>
+              Flare Africa
+            </h3>
 
+            <p class="project-role">
+              Founder · Head of Community · Project Manager
+            </p>
           </div>
 
-
-          <div>
-
-            <p class="about-text">
-              My work sits between product, community and
-              distribution. I help Web3 teams communicate what
-              they are building, find the right audiences,
-              activate communities and turn attention into
-              meaningful participation.
-            </p>
-
-            <p class="about-text">
-              I've worked across community management, social
-              strategy, ecosystem growth, partnerships, events,
-              content, project coordination and AI-enabled
-              workflows.
-            </p>
-
-            <p class="about-text">
-              I care about the part that happens after the post:
-              whether people understand the product, whether they
-              come back, whether communities become contributors,
-              and whether distribution actually compounds.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         EXPERIENCE
-         ===================================================== -->
-
-    <section class="section">
-
-      <div class="container">
-
-        <div class="section-label">
-          03 / Experience
-        </div>
-
-        <h2 class="section-title">
-          Work that compounds across
-          communities and products.
-        </h2>
-
-
-        <div class="work-grid">
-
-
-          <article class="work-card">
-
-            <div class="work-top">
-
-              <div>
-
-                <div class="work-name">
-                  Vesta DAO
-                </div>
-
-                <div class="work-role">
-                  Social Media Manager
-                </div>
-
-              </div>
-
-              <div class="work-metric">
-                +40%
-              </div>
-
-            </div>
-
-            <p class="work-description">
-              Built narrative-driven social content and managed
-              the project's X presence, using curiosity,
-              storytelling and community interaction to improve
-              engagement and visibility.
-            </p>
-
-          </article>
-
-
-          <article class="work-card">
-
-            <div class="work-top">
-
-              <div>
-
-                <div class="work-name">
-                  Cerus
-                </div>
-
-                <div class="work-role">
-                  Social Media Manager
-                </div>
-
-              </div>
-
-              <div class="work-metric">
-                3K+
-              </div>
-
-            </div>
-
-            <p class="work-description">
-              Managed social channels, content and community
-              communication while helping grow the account
-              organically and supporting campaigns that generated
-              measurable commercial activity.
-            </p>
-
-          </article>
-
-
-          <article class="work-card">
-
-            <div class="work-top">
-
-              <div>
-
-                <div class="work-name">
-                  Yeti-Apes
-                </div>
-
-                <div class="work-role">
-                  Head of Community
-                </div>
-
-              </div>
-
-              <div class="work-metric">
-                Community
-              </div>
-
-            </div>
-
-            <p class="work-description">
-              Built and managed community operations, coordinated
-              moderators and acted as a bridge between community
-              members and project leadership.
-            </p>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         CONTACT
-         ===================================================== -->
-
-    <section id="contact" class="section">
-
-      <div class="container">
-
-        <div class="section-label">
-          04 / Contact
-        </div>
-
-        <div class="contact-box">
-
-          <h2 class="section-title">
-            Building something worth distributing?
-          </h2>
-
-          <p class="about-text">
-            I'm open to working with teams building useful
-            products across Web3, AI and emerging technology.
+          <p class="project-type">
+            Ecosystem · Community · Growth
           </p>
 
-          <div class="hero-actions">
+        </div>
 
-            <a
-              href="https://x.com/0xcastra"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="button button-primary"
-            >
-              Message me on X →
-            </a>
 
-            <a
-              href="mailto:Castraccani@proton.me"
-              class="button"
-            >
-              Email me
-            </a>
+        <div class="project-body">
+
+          <div class="project-description">
+
+            <p>
+              Built and led a grassroots initiative focused on
+              bringing Flare to African builders and users.
+            </p>
+
+            <p>
+              Worked across community growth, developer
+              onboarding, education, campaigns, partnerships,
+              events and ecosystem coordination while working
+              with the wider Flare teams.
+            </p>
+
+          </div>
+
+
+          <div class="project-results">
+
+            <div class="result">
+              <strong>$10K</strong>
+              <span>grant programme led</span>
+            </div>
+
+            <div class="result">
+              <strong>1K+</strong>
+              <span>X followers</span>
+            </div>
+
+            <div class="result">
+              <strong>250+</strong>
+              <span>Telegram community</span>
+            </div>
+
+            <div class="result">
+              <strong>300+</strong>
+              <span>in-person attendance</span>
+            </div>
 
           </div>
 
         </div>
+
+
+        <div class="project-footer">
+
+          <a
+            href="https://x.com/FlareAfrica_"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X / Campaigns ↗
+          </a>
+
+          <a
+            href="https://flareafrica.xyz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Website ↗
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- SHIPGUILD -->
+      <article class="project">
+
+        <div class="project-header">
+
+          <div>
+            <p class="project-number">02</p>
+
+            <h3>
+              ShipGuild
+            </h3>
+
+            <p class="project-role">
+              Growth · Content · Community · Distribution
+            </p>
+          </div>
+
+          <p class="project-type">
+            Web3 · AI · Distribution
+          </p>
+
+        </div>
+
+
+        <div class="project-body">
+
+          <div class="project-description">
+
+            <p>
+              Worked across the ShipGuild ecosystem, helping
+              turn technical and early-stage Web3 ideas into
+              content, conversations and distribution.
+            </p>
+
+            <p>
+              Contributed to social content, livestreams,
+              community engagement and creator-focused
+              distribution around the builders and products
+              coming through the ecosystem.
+            </p>
+
+          </div>
+
+
+          <div class="project-results">
+
+            <div class="result">
+              <strong>5K+</strong>
+              <span>livestream views</span>
+            </div>
+
+            <div class="result">
+              <strong>1.9K+</strong>
+              <span>X followers</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-footer">
+
+          <a
+            href="https://x.com/ShipGuild"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X / ShipGuild ↗
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- CAPELLA -->
+      <article class="project">
+
+        <div class="project-header">
+
+          <div>
+            <p class="project-number">03</p>
+
+            <h3>
+              Capella
+            </h3>
+
+            <p class="project-role">
+              Community · Ecosystem · Growth
+            </p>
+          </div>
+
+          <p class="project-type">
+            Creator Economy · Web3
+          </p>
+
+        </div>
+
+
+        <div class="project-body">
+
+          <div class="project-description">
+
+            <p>
+              Helped grow Capella, a decentralized creator
+              platform built around creating, sharing,
+              collaborating and monetizing content onchain.
+            </p>
+
+            <p>
+              Worked across community communication,
+              creator initiatives, product distribution and
+              ecosystem growth.
+            </p>
+
+          </div>
+
+
+          <div class="project-results">
+
+            <div class="result">
+              <strong>500+</strong>
+              <span>X followers</span>
+            </div>
+
+            <div class="result">
+              <strong>341+</strong>
+              <span>users</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-footer">
+
+          <a
+            href="https://x.com/Capella_dApp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X / Capella ↗
+          </a>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="experience-section">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          02 / Experience
+        </div>
+
+        <h2>
+          More than social media.
+        </h2>
+
+      </div>
+
+
+      <div class="experience-list">
+
+        <div class="experience-item">
+
+          <div class="experience-name">
+            Flare Africa
+          </div>
+
+          <div class="experience-role">
+            Founder · Head of Community · Project Manager
+          </div>
+
+          <div class="experience-year">
+            Ongoing
+          </div>
+
+        </div>
+
+
+        <div class="experience-item">
+
+          <div class="experience-name">
+            ShipGuild
+          </div>
+
+          <div class="experience-role">
+            Growth · Content · Distribution
+          </div>
+
+          <div class="experience-year">
+            Ongoing
+          </div>
+
+        </div>
+
+
+        <div class="experience-item">
+
+          <div class="experience-name">
+            Capella
+          </div>
+
+          <div class="experience-role">
+            Community · Ecosystem · Growth
+          </div>
+
+          <div class="experience-year">
+            Ongoing
+          </div>
+
+        </div>
+
+
+        <div class="experience-item">
+
+          <div class="experience-name">
+            Web3 / Crypto
+          </div>
+
+          <div class="experience-role">
+            Social Media · Community · Partnerships
+          </div>
+
+          <div class="experience-year">
+            4+ years
+          </div>
+
+        </div>
+
+
+        <div class="experience-item">
+
+          <div class="experience-name">
+            AI
+          </div>
+
+          <div class="experience-role">
+            AI workflows · Research · Emerging products
+          </div>
+
+          <div class="experience-year">
+            1+ year
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+
+      <div class="section-label">
+        03 / About
+      </div>
+
+      <div class="about-grid">
+
+        <h2>
+          I care about what happens
+          <em>after the post.</em>
+        </h2>
+
+        <div class="about-copy">
+
+          <p>
+            A product can be technically excellent and still
+            sit unnoticed.
+          </p>
+
+          <p>
+            My work is about putting it in front of the right
+            people, through the right communities, with the
+            right context — and building the systems that make
+            that distribution repeatable.
+          </p>
+
+          <p>
+            I've worked across community management,
+            ecosystem development, content, social strategy,
+            partnerships, campaigns, events and project
+            coordination.
+          </p>
+
+          <p>
+            I'm particularly interested in the intersection
+            between AI, crypto, creators and internet-native
+            communities.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CAPABILITIES -->
+    <section class="capabilities-section">
+
+      <div class="section-heading">
+
+        <div class="section-label">
+          04 / Capabilities
+        </div>
+
+        <h2>
+          Where I tend to be useful.
+        </h2>
+
+      </div>
+
+
+      <div class="capabilities-grid">
+
+        <div class="capability">
+          <span>01</span>
+          <h3>Community</h3>
+          <p>
+            Building, managing and activating communities
+            around products and ecosystems.
+          </p>
+        </div>
+
+        <div class="capability">
+          <span>02</span>
+          <h3>Distribution</h3>
+          <p>
+            Finding the right audiences, channels and people
+            to get products in front of them.
+          </p>
+        </div>
+
+        <div class="capability">
+          <span>03</span>
+          <h3>Content</h3>
+          <p>
+            Turning technical ideas into clear, useful and
+            human content people actually want to engage with.
+          </p>
+        </div>
+
+        <div class="capability">
+          <span>04</span>
+          <h3>Ecosystem Growth</h3>
+          <p>
+            Connecting builders, users, communities and
+            partners around an ecosystem.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+
+      <div class="section-label">
+        05 / Contact
+      </div>
+
+      <h2>
+        Have something worth
+        <em>building?</em>
+      </h2>
+
+      <p>
+        I'm open to working with teams building useful
+        products across Web3, AI and emerging technology.
+      </p>
+
+      <div class="contact-links">
+
+        <a
+          href="mailto:castraccanii@gmail.com"
+        >
+          castraccanii@gmail.com ↗
+        </a>
+
+        <a
+          href="https://x.com/0xcastra"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          X / @0xcastra ↗
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ayoola-qayyum-9b4094118/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn ↗
+        </a>
 
       </div>
 
@@ -912,29 +650,19 @@
   </main>
 
 
-  <!-- =======================================================
-       FOOTER
-       ======================================================= -->
+  <!-- FOOTER -->
+  <footer class="site-footer">
 
-  <footer class="footer">
+    <span>
+      CASTRACCANI © 2026
+    </span>
 
-    <div class="container footer-inner">
-
-      <span>
-        CASTRACCANI © 2026
-      </span>
-
-      <a
-        href="https://x.com/0xcastra"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        @0xcastra
-      </a>
-
-    </div>
+    <span>
+      WEB3 · AI · COMMUNITY
+    </span>
 
   </footer>
+
 
 </body>
 </html>
