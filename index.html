@@ -12,445 +12,466 @@
   >
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Portfolio content refresh */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 40px 0 80px;
+    }
+
+    .metric {
+      padding: 24px;
+      border: 1px solid var(--border, #262626);
+      background: var(--surface, #0d0d0d);
+    }
+
+    .metric-number {
+      display: block;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      margin-bottom: 8px;
+    }
+
+    .metric-label {
+      color: var(--muted, #8b8b86);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .section {
+      padding: 80px 0;
+      border-top: 1px solid var(--border, #262626);
+    }
+
+    .section-label {
+      color: var(--muted, #8b8b86);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .section-title {
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1;
+      letter-spacing: -2px;
+      max-width: 800px;
+      margin-bottom: 50px;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .work-card {
+      border: 1px solid var(--border, #262626);
+      background: var(--surface, #0d0d0d);
+      padding: 32px;
+    }
+
+    .work-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .work-name {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .work-role {
+      color: var(--muted, #8b8b86);
+      font-size: 13px;
+      margin-top: 7px;
+    }
+
+    .work-metric {
+      font-size: 24px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .work-description {
+      max-width: 780px;
+      color: var(--muted, #8b8b86);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .work-list {
+      margin: 0 0 28px;
+      padding-left: 20px;
+    }
+
+    .work-list li {
+      margin-bottom: 9px;
+      line-height: 1.6;
+    }
+
+    .proof-link {
+      display: inline-block;
+      margin-right: 18px;
+      font-size: 13px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .about-text {
+      color: var(--muted, #8b8b86);
+      line-height: 1.8;
+      max-width: 650px;
+    }
+
+    .contact-box {
+      border: 1px solid var(--border, #262626);
+      padding: 32px;
+      background: var(--surface, #0d0d0d);
+    }
+
+    @media (max-width: 800px) {
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .work-top {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .metrics-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .metric {
+        padding: 18px;
+      }
+
+      .metric-number {
+        font-size: 25px;
+      }
+
+      .work-card {
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- NAVIGATION -->
   <header class="nav">
-    <a href="#top" class="logo">CASTRACCANI<span>.</span></a>
+    <div class="container nav-inner">
 
-    <nav class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <a href="#" class="logo">CASTRACCANI<span>.</span></a>
 
-    <a href="#contact" class="availability">
-      <span></span>
-      Open to work
-    </a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a
+        href="https://x.com/0xcastra"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-status"
+      >
+        <span></span> Open to work
+      </a>
+
+    </div>
   </header>
 
 
-  <main id="top">
+  <main>
 
     <!-- HERO -->
-    <section class="hero section">
+    <section class="hero">
+      <div class="container">
 
-      <div class="eyebrow">
-        WEB3 / GROWTH / ECOSYSTEM / BD
-      </div>
+        <div class="eyebrow">
+          WEB3 / GROWTH / ECOSYSTEM / BD
+        </div>
 
-      <h1>
-        I build the
-        <em>distribution layer.</em>
-      </h1>
-
-      <div class="hero-bottom">
+        <h1>
+          I build the
+          <span>distribution layer.</span>
+        </h1>
 
         <p class="hero-description">
           I work with early-stage Web3 teams on growth, community,
           partnerships, content and ecosystem activation — turning
-          good products into things people actually discover and use.
+          good products into things people actually use.
         </p>
 
         <div class="hero-actions">
           <a href="#work" class="button button-primary">
-            Selected work <span>↘</span>
+            Selected work ↓
           </a>
 
           <a
             href="https://x.com/0xcastra"
             target="_blank"
-            class="button button-secondary"
+            rel="noopener noreferrer"
+            class="button"
           >
-            X / @0xcastra ↗
+            X / @0xcastra
           </a>
         </div>
 
-      </div>
+        <div class="hero-meta">
+          <span>Nigeria · Remote</span>
+          <span>4+ years in Web3</span>
+          <span>1+ year in AI</span>
+        </div>
 
-      <div class="hero-meta">
-        <span>Nigeria</span>
-        <span>Remote</span>
-        <span>Web3</span>
-        <span>Growth + Distribution</span>
+      </div>
+    </section>
+
+
+    <!-- METRICS -->
+    <section class="container">
+
+      <div class="metrics-grid">
+
+        <div class="metric">
+          <span class="metric-number">$10K</span>
+          <span class="metric-label">Grant program led</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-number">1K+</span>
+          <span class="metric-label">Flare Africa X followers</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-number">250+</span>
+          <span class="metric-label">Flare Africa Telegram community</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-number">500+</span>
+          <span class="metric-label">Capella X followers</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-number">5K+</span>
+          <span class="metric-label">ShipGuild livestream views</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-number">300+</span>
+          <span class="metric-label">In-person event attendance</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-number">4+</span>
+          <span class="metric-label">Years working in Web3</span>
+        </div>
+
+        <div class="metric">
+          <span class="metric-number">1+</span>
+          <span class="metric-label">Year working with AI</span>
+        </div>
+
       </div>
 
     </section>
 
 
-    <!-- SELECTED WORK -->
-    <section id="work" class="section work-section">
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="container">
 
-      <div class="section-heading">
-        <span class="section-number">01</span>
+        <div class="section-label">01 / Selected work</div>
 
-        <div>
-          <p class="eyebrow">SELECTED WORK</p>
-          <h2>Things I've helped move forward.</h2>
-        </div>
-      </div>
-
-
-      <!-- FLARE AFRICA -->
-      <article class="project project-featured">
-
-        <div class="project-number">01</div>
-
-        <div class="project-content">
-
-          <div class="project-top">
-            <span class="project-type">ECOSYSTEM / COMMUNITY</span>
-            <span>2025 — PRESENT</span>
-          </div>
-
-          <h3>Flare Africa</h3>
-
-          <p>
-            Built and led a grassroots ecosystem initiative focused on
-            bringing more African users, builders and communities into
-            Flare.
-          </p>
-
-          <div class="project-tags">
-            <span>Community</span>
-            <span>Developer Growth</span>
-            <span>Events</span>
-            <span>Content</span>
-            <span>Partnerships</span>
-          </div>
-
-          <a href="https://flareafrica.xyz" target="_blank" class="project-link">
-            Explore project ↗
-          </a>
-
-        </div>
-
-      </article>
+        <h2 class="section-title">
+          Building communities, distribution
+          and ecosystems around products.
+        </h2>
 
 
-      <!-- SHIPGUILD -->
-      <article class="project">
-
-        <div class="project-number">02</div>
-
-        <div class="project-content">
-
-          <div class="project-top">
-            <span class="project-type">GROWTH / DISTRIBUTION</span>
-            <span>ONGOING</span>
-          </div>
-
-          <h3>ShipGuild</h3>
-
-          <p>
-            Working around distribution, content and ecosystem growth
-            for a build-in-public environment shipping AI × crypto
-            products and experiments.
-          </p>
-
-          <div class="project-tags">
-            <span>Distribution</span>
-            <span>Content</span>
-            <span>Community</span>
-            <span>Growth</span>
-          </div>
-
-        </div>
-
-      </article>
+        <div class="work-grid">
 
 
-      <!-- CAPELLA -->
-      <article class="project">
+          <!-- FLARE AFRICA -->
+          <article class="work-card">
 
-        <div class="project-number">03</div>
+            <div class="work-top">
+              <div>
+                <div class="work-name">Flare Africa</div>
+                <div class="work-role">
+                  Founder · Head of Community · Project Manager
+                </div>
+              </div>
 
-        <div class="project-content">
+              <div class="work-metric">$10K grant</div>
+            </div>
 
-          <div class="project-top">
-            <span class="project-type">COMMUNITY / PRODUCT GROWTH</span>
-            <span>ONGOING</span>
-          </div>
+            <p class="work-description">
+              Built and managed a grassroots Flare ecosystem initiative
+              focused on developer onboarding, community growth,
+              education and ecosystem adoption across Africa.
+            </p>
 
-          <h3>Capella</h3>
+            <ul class="work-list">
+              <li>Led a $10K community growth grant program.</li>
+              <li>Built the community to 1K+ X followers and 250+ Telegram members.</li>
+              <li>Worked with wider Flare teams on ecosystem initiatives and campaigns.</li>
+              <li>Led developer and community programs including Dev Hours, Developer Bootcamp and Dev Bounty.</li>
+              <li>Supported the ETHNile Flare track, ambassador onboarding, ecosystem partnerships and IRL/virtual events.</li>
+              <li>Reached 300+ total in-person event attendance across community activities.</li>
+            </ul>
 
-          <p>
-            Helped grow and activate a creator-focused Web3 platform,
-            working across community, content, product launches and
-            ecosystem communication.
-          </p>
+            <a
+              href="https://x.com/FlareAfrica_"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="proof-link"
+            >
+              X / Campaigns →
+            </a>
 
-          <div class="project-tags">
-            <span>Community</span>
-            <span>Creator Growth</span>
-            <span>Social</span>
-            <span>Product</span>
-          </div>
-
-        </div>
-
-      </article>
-
-
-      <!-- FRONTIER -->
-      <article class="project">
-
-        <div class="project-number">04</div>
-
-        <div class="project-content">
-
-          <div class="project-top">
-            <span class="project-type">GROWTH / BD / STRATEGY</span>
-            <span>ONGOING</span>
-          </div>
-
-          <h3>Frontier Studio</h3>
-
-          <p>
-            Working on the strategy and distribution layer for an
-            early-stage studio focused on helping projects find the
-            right communities, channels and growth opportunities.
-          </p>
-
-          <div class="project-tags">
-            <span>Strategy</span>
-            <span>Business Development</span>
-            <span>Distribution</span>
-            <span>Partnerships</span>
-          </div>
-
-        </div>
-
-      </article>
+          </article>
 
 
-      <!-- WEB3 MATTERS -->
-      <article class="project">
+          <!-- SHIPGUILD -->
+          <article class="work-card">
 
-        <div class="project-number">05</div>
+            <div class="work-top">
+              <div>
+                <div class="work-name">ShipGuild</div>
+                <div class="work-role">
+                  Growth · Content · Community · Distribution
+                </div>
+              </div>
 
-        <div class="project-content">
+              <div class="work-metric">5K+ views</div>
+            </div>
 
-          <div class="project-top">
-            <span class="project-type">CONTENT / SOCIAL / COMMUNITY</span>
-            <span>SELECTED WORK</span>
-          </div>
+            <p class="work-description">
+              Worked across the rebranded ShipGuild ecosystem,
+              helping turn technical and early-stage Web3 ideas into
+              content, conversations and distribution.
+            </p>
 
-          <h3>Web3 Matters</h3>
+            <ul class="work-list">
+              <li>Managed content and social distribution around Web3 and AI products.</li>
+              <li>Supported livestream programming and community engagement.</li>
+              <li>Helped translate technical topics into accessible content for broader audiences.</li>
+              <li>Contributed to ecosystem growth, partnerships and creator-focused distribution.</li>
+            </ul>
 
-          <p>
-            Worked across social media, content, livestreams and
-            community activation for a Web3-focused media and
-            education platform.
-          </p>
+            <a
+              href="https://x.com/ShipGuild"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="proof-link"
+            >
+              X / ShipGuild →
+            </a>
 
-          <div class="project-tags">
-            <span>Social Media</span>
-            <span>Content</span>
-            <span>Livestreams</span>
-            <span>Community</span>
-          </div>
-
-        </div>
-
-      </article>
-
-    </section>
+          </article>
 
 
-    <!-- APPROACH -->
-    <section class="section approach-section">
+          <!-- CAPELLA -->
+          <article class="work-card">
 
-      <div class="section-heading">
-        <span class="section-number">02</span>
+            <div class="work-top">
+              <div>
+                <div class="work-name">Capella</div>
+                <div class="work-role">
+                  Community · Ecosystem · Growth
+                </div>
+              </div>
 
-        <div>
-          <p class="eyebrow">HOW I THINK ABOUT GROWTH</p>
-          <h2>Good products still need a way to travel.</h2>
-        </div>
-      </div>
+              <div class="work-metric">500+ followers</div>
+            </div>
 
-      <div class="approach-grid">
+            <p class="work-description">
+              Helped grow Capella, a decentralized hub for creators,
+              through community building, content, ecosystem activation
+              and product distribution.
+            </p>
 
-        <div class="approach-card">
-          <span>01</span>
-          <h3>Find the right people.</h3>
-          <p>
-            Growth isn't always about reaching more people.
-            It's about finding the communities where the product
-            already makes sense.
-          </p>
-        </div>
+            <ul class="work-list">
+              <li>Built and managed community-facing growth initiatives.</li>
+              <li>Supported creator-focused campaigns and product communication.</li>
+              <li>Helped drive adoption around creator tipping and the broader ecosystem.</li>
+              <li>Supported social growth to 500+ X followers.</li>
+            </ul>
 
-        <div class="approach-card">
-          <span>02</span>
-          <h3>Give them context.</h3>
-          <p>
-            Distribution works better when the message fits the
-            community instead of forcing everyone through the same
-            generic funnel.
-          </p>
-        </div>
+            <a
+              href="https://x.com/capella_dapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="proof-link"
+            >
+              X / Capella →
+            </a>
 
-        <div class="approach-card">
-          <span>03</span>
-          <h3>Build the loop.</h3>
-          <p>
-            The goal isn't one successful campaign. It's creating
-            systems that make discovery, participation and retention
-            repeatable.
-          </p>
+          </article>
+
         </div>
 
       </div>
-
     </section>
 
 
     <!-- ABOUT -->
-    <section id="about" class="section about-section">
+    <section id="about" class="section">
 
-      <div class="section-heading">
-        <span class="section-number">03</span>
+      <div class="container">
 
-        <div>
-          <p class="eyebrow">ABOUT</p>
-          <h2>A generalist with a distribution bias.</h2>
-        </div>
-      </div>
+        <div class="section-label">02 / About</div>
 
-      <div class="about-grid">
+        <div class="about-grid">
 
-        <div class="about-large">
-          <p>
-            I'm Castraccani — a Web3 growth and ecosystem operator
-            interested in the space between a good product and the
-            people who need to find it.
-          </p>
-
-          <p>
-            My work sits across community, content, partnerships,
-            business development and ecosystem activation.
-          </p>
-        </div>
-
-        <div class="about-small">
-          <p>
-            I like early-stage environments where the playbook isn't
-            completely written yet.
-          </p>
-
-          <p>
-            That usually means figuring out what actually works,
-            testing it quickly, and turning the useful parts into
-            something repeatable.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section experience-section">
-
-      <div class="section-heading">
-        <span class="section-number">04</span>
-
-        <div>
-          <p class="eyebrow">EXPERIENCE</p>
-          <h2>Across growth, community and Web3.</h2>
-        </div>
-      </div>
-
-
-      <div class="experience-list">
-
-        <div class="experience-row">
-          <div class="experience-date">CURRENT</div>
-
-          <div class="experience-role">
-            <h3>Growth / Ecosystem / Community</h3>
-            <p>Flare Africa · ShipGuild · Frontier Studio</p>
+          <div>
+            <h2 class="section-title">
+              Growth is more than posting.
+            </h2>
           </div>
 
-          <div class="experience-description">
-            Strategy, distribution, community building, partnerships
-            and ecosystem activation.
-          </div>
-        </div>
+          <div>
 
+            <p class="about-text">
+              My work sits between product, community and distribution.
+              I help Web3 teams communicate what they are building,
+              find the right audiences, activate communities and turn
+              attention into meaningful participation.
+            </p>
 
-        <div class="experience-row">
-          <div class="experience-date">ONGOING</div>
+            <p class="about-text">
+              My experience spans community management, social strategy,
+              ecosystem growth, partnerships, events, content,
+              project management and AI-enabled workflows.
+            </p>
 
-          <div class="experience-role">
-            <h3>Community & Growth</h3>
-            <p>Capella</p>
-          </div>
-
-          <div class="experience-description">
-            Creator growth, community, product communication and
-            ecosystem initiatives.
-          </div>
-        </div>
-
-
-        <div class="experience-row">
-          <div class="experience-date">WEB3</div>
-
-          <div class="experience-role">
-            <h3>Social / Content / Community</h3>
-            <p>Web3 Matters · Vesta DAO · CerusVaults</p>
           </div>
 
-          <div class="experience-description">
-            Social strategy, content, community activation and
-            campaign execution across Web3 projects.
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- PRINCIPLES -->
-    <section class="section principles-section">
-
-      <div class="principles-intro">
-        <p class="eyebrow">A FEW PRINCIPLES</p>
-        <h2>
-          Distribution is a system,
-          not a single post.
-        </h2>
-      </div>
-
-      <div class="principles-list">
-
-        <div>
-          <span>01</span>
-          <p>Don't confuse attention with adoption.</p>
-        </div>
-
-        <div>
-          <span>02</span>
-          <p>Start with the people who already care.</p>
-        </div>
-
-        <div>
-          <span>03</span>
-          <p>Make the product easy to understand.</p>
-        </div>
-
-        <div>
-          <span>04</span>
-          <p>Turn experiments into systems.</p>
         </div>
 
       </div>
@@ -459,42 +480,37 @@
 
 
     <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section">
 
-      <p class="eyebrow">05 / CONTACT</p>
+      <div class="container">
 
-      <h2>
-        Have something worth
-        <em>building?</em>
-      </h2>
+        <div class="section-label">03 / Contact</div>
 
-      <p class="contact-description">
-        I'm always interested in interesting products, ambitious
-        teams and problems that need a distribution layer.
-      </p>
+        <div class="contact-box">
 
-      <div class="contact-links">
+          <h2 class="section-title">
+            Building something worth distributing?
+          </h2>
 
-        <a href="mailto:castraccanii@gmail.com">
-          <span>Email</span>
-          castraccanii@gmail.com ↗
-        </a>
+          <p class="about-text">
+            I'm open to working with teams building useful products
+            across Web3, AI and emerging technology.
+          </p>
 
-        <a
-          href="https://x.com/0xcastra"
-          target="_blank"
-        >
-          <span>X</span>
-          @0xcastra ↗
-        </a>
+          <div class="hero-actions">
 
-        <a
-          href="https://www.linkedin.com/in/ayoola-qayyum-9b4094118/"
-          target="_blank"
-        >
-          <span>LinkedIn</span>
-          Ayoola Qayyum ↗
-        </a>
+            <a
+              href="https://x.com/0xcastra"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              Message me on X →
+            </a>
+
+          </div>
+
+        </div>
 
       </div>
 
@@ -505,36 +521,20 @@
 
   <!-- FOOTER -->
   <footer class="footer">
+    <div class="container footer-inner">
 
-    <span>CASTRACCANI.</span>
+      <span>CASTRACCANI © 2026</span>
 
-    <span>
-      Built with curiosity.
-    </span>
+      <a
+        href="https://x.com/0xcastra"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @0xcastra
+      </a>
 
-    <span>
-      © 2026
-    </span>
-
+    </div>
   </footer>
-
-
-  <script>
-    // Smooth scrolling for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
-
-        if (target) {
-          e.preventDefault();
-
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  </script>
 
 </body>
 </html>
