@@ -8,13 +8,16 @@
 
   <meta
     name="description"
-    content="Castraccani builds distribution, community and ecosystem growth for Web3 products."
+    content="Castraccani works across growth, community, content, distribution and ecosystem development for Web3 and emerging technology products."
   >
 
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Portfolio content refresh */
+    /* =========================================================
+       PORTFOLIO CONTENT
+       ========================================================= */
+
     .metrics-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -37,6 +40,7 @@
     }
 
     .metric-label {
+      display: block;
       color: var(--muted, #8b8b86);
       font-size: 13px;
       line-height: 1.5;
@@ -62,6 +66,8 @@
       max-width: 800px;
       margin-bottom: 50px;
     }
+
+    /* Selected work */
 
     .work-grid {
       display: grid;
@@ -118,13 +124,29 @@
       line-height: 1.6;
     }
 
+    .proof-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
     .proof-link {
       display: inline-block;
-      margin-right: 18px;
       font-size: 13px;
       text-decoration: underline;
       text-underline-offset: 4px;
     }
+
+    /* Proof / evidence */
+
+    .proof-note {
+      margin-top: 18px;
+      color: var(--muted, #8b8b86);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    /* About */
 
     .about-grid {
       display: grid;
@@ -136,13 +158,18 @@
       color: var(--muted, #8b8b86);
       line-height: 1.8;
       max-width: 650px;
+      margin-bottom: 20px;
     }
+
+    /* Contact */
 
     .contact-box {
       border: 1px solid var(--border, #262626);
       padding: 32px;
       background: var(--surface, #0d0d0d);
     }
+
+    /* Responsive */
 
     @media (max-width: 800px) {
       .metrics-grid {
@@ -174,17 +201,27 @@
       .work-card {
         padding: 24px;
       }
+
+      .work-name {
+        font-size: 25px;
+      }
     }
   </style>
 </head>
 
+
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- =======================================================
+       NAVIGATION
+       ======================================================= -->
+
   <header class="nav">
     <div class="container nav-inner">
 
-      <a href="#" class="logo">CASTRACCANI<span>.</span></a>
+      <a href="#" class="logo">
+        CASTRACCANI<span>.</span>
+      </a>
 
       <nav>
         <a href="#work">Work</a>
@@ -198,7 +235,8 @@
         rel="noopener noreferrer"
         class="nav-status"
       >
-        <span></span> Open to work
+        <span></span>
+        Open to work
       </a>
 
     </div>
@@ -207,12 +245,16 @@
 
   <main>
 
-    <!-- HERO -->
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
     <section class="hero">
+
       <div class="container">
 
         <div class="eyebrow">
-          WEB3 / GROWTH / ECOSYSTEM / BD
+          WEB3 / GROWTH / COMMUNITY / ECOSYSTEM
         </div>
 
         <h1>
@@ -221,12 +263,13 @@
         </h1>
 
         <p class="hero-description">
-          I work with early-stage Web3 teams on growth, community,
-          partnerships, content and ecosystem activation — turning
-          good products into things people actually use.
+          I work with Web3 teams on growth, community, content,
+          partnerships and ecosystem activation — helping useful
+          products reach the people who can actually use them.
         </p>
 
         <div class="hero-actions">
+
           <a href="#work" class="button button-primary">
             Selected work ↓
           </a>
@@ -239,61 +282,82 @@
           >
             X / @0xcastra
           </a>
+
         </div>
 
         <div class="hero-meta">
           <span>Nigeria · Remote</span>
           <span>4+ years in Web3</span>
-          <span>1+ year in AI</span>
+          <span>1+ year working with AI</span>
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- METRICS -->
+    <!-- =====================================================
+         KEY NUMBERS
+         ===================================================== -->
+
     <section class="container">
 
       <div class="metrics-grid">
 
         <div class="metric">
           <span class="metric-number">$10K</span>
-          <span class="metric-label">Grant program led</span>
+          <span class="metric-label">
+            Community growth grant led
+          </span>
         </div>
 
         <div class="metric">
-          <span class="metric-number">1K+</span>
-          <span class="metric-label">Flare Africa X followers</span>
+          <span class="metric-number">1.1K+</span>
+          <span class="metric-label">
+            Flare Africa X followers
+          </span>
         </div>
 
         <div class="metric">
-          <span class="metric-number">250+</span>
-          <span class="metric-label">Flare Africa Telegram community</span>
+          <span class="metric-number">249</span>
+          <span class="metric-label">
+            Flare Africa Telegram members
+          </span>
         </div>
 
         <div class="metric">
-          <span class="metric-number">500+</span>
-          <span class="metric-label">Capella X followers</span>
+          <span class="metric-number">1.9K+</span>
+          <span class="metric-label">
+            ShipGuild X followers
+          </span>
         </div>
 
         <div class="metric">
-          <span class="metric-number">5K+</span>
-          <span class="metric-label">ShipGuild livestream views</span>
+          <span class="metric-number">532</span>
+          <span class="metric-label">
+            Capella X followers
+          </span>
         </div>
 
         <div class="metric">
-          <span class="metric-number">300+</span>
-          <span class="metric-label">In-person event attendance</span>
+          <span class="metric-number">341+</span>
+          <span class="metric-label">
+            Capella users
+          </span>
         </div>
 
         <div class="metric">
-          <span class="metric-number">4+</span>
-          <span class="metric-label">Years working in Web3</span>
+          <span class="metric-number">143K+</span>
+          <span class="metric-label">
+            Flare Africa impressions in reported period
+          </span>
         </div>
 
         <div class="metric">
-          <span class="metric-number">1+</span>
-          <span class="metric-label">Year working with AI</span>
+          <span class="metric-number">10K+</span>
+          <span class="metric-label">
+            Flare Africa engagements in reported period
+          </span>
         </div>
 
       </div>
@@ -301,11 +365,17 @@
     </section>
 
 
-    <!-- WORK -->
+    <!-- =====================================================
+         SELECTED WORK
+         ===================================================== -->
+
     <section id="work" class="section">
+
       <div class="container">
 
-        <div class="section-label">01 / Selected work</div>
+        <div class="section-label">
+          01 / Selected work
+        </div>
 
         <h2 class="section-title">
           Building communities, distribution
@@ -316,158 +386,346 @@
         <div class="work-grid">
 
 
-          <!-- FLARE AFRICA -->
+          <!-- =================================================
+               FLARE AFRICA
+               ================================================= -->
+
           <article class="work-card">
 
             <div class="work-top">
+
               <div>
-                <div class="work-name">Flare Africa</div>
-                <div class="work-role">
-                  Founder · Head of Community · Project Manager
+
+                <div class="work-name">
+                  Flare Africa
                 </div>
+
+                <div class="work-role">
+                  Founder · Community Lead · Project Manager
+                </div>
+
               </div>
 
-              <div class="work-metric">$10K grant</div>
+              <div class="work-metric">
+                $10K grant
+              </div>
+
             </div>
 
+
             <p class="work-description">
-              Built and managed a grassroots Flare ecosystem initiative
-              focused on developer onboarding, community growth,
-              education and ecosystem adoption across Africa.
+              Built and managed a grassroots Flare ecosystem
+              initiative focused on community growth, developer
+              onboarding, education, events and ecosystem adoption
+              across Africa.
             </p>
 
+
             <ul class="work-list">
-              <li>Led a $10K community growth grant program.</li>
-              <li>Built the community to 1K+ X followers and 250+ Telegram members.</li>
-              <li>Worked with wider Flare teams on ecosystem initiatives and campaigns.</li>
-              <li>Led developer and community programs including Dev Hours, Developer Bootcamp and Dev Bounty.</li>
-              <li>Supported the ETHNile Flare track, ambassador onboarding, ecosystem partnerships and IRL/virtual events.</li>
-              <li>Reached 300+ total in-person event attendance across community activities.</li>
+
+              <li>
+                Led a $10K Community Growth Grant programme.
+              </li>
+
+              <li>
+                Grew the Flare Africa X community to 1,100+ followers
+                and the Telegram community to 249 members.
+              </li>
+
+              <li>
+                Built and coordinated community initiatives spanning
+                education, developer activation and ecosystem growth.
+              </li>
+
+              <li>
+                Organised developer sessions, X Spaces, IRL meetups
+                and community education programmes.
+              </li>
+
+              <li>
+                Supported the Flare developer ecosystem through
+                bootcamps, Dev Hours, bounties and builder-focused
+                initiatives.
+              </li>
+
+              <li>
+                Supported the Flare track at ETHNile and helped connect
+                African builders with the wider ecosystem.
+              </li>
+
             </ul>
 
-            <a
-              href="https://x.com/FlareAfrica_"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="proof-link"
-            >
-              X / Campaigns →
-            </a>
+
+            <div class="proof-links">
+
+              <a
+                href="https://x.com/FlareAfrica_"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proof-link"
+              >
+                X / Flare Africa →
+              </a>
+
+              <a
+                href="https://flareafrica.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proof-link"
+              >
+                Website →
+              </a>
+
+            </div>
+
+            <p class="proof-note">
+              Community analytics shown in the portfolio include
+              143K+ impressions and 10K+ engagements during the
+              reported analytics period.
+            </p>
 
           </article>
 
 
-          <!-- SHIPGUILD -->
+          <!-- =================================================
+               SHIPGUILD
+               ================================================= -->
+
           <article class="work-card">
 
             <div class="work-top">
+
               <div>
-                <div class="work-name">ShipGuild</div>
+
+                <div class="work-name">
+                  ShipGuild
+                </div>
+
                 <div class="work-role">
                   Growth · Content · Community · Distribution
                 </div>
+
               </div>
 
-              <div class="work-metric">5K+ views</div>
+              <div class="work-metric">
+                5K+ views
+              </div>
+
             </div>
 
+
             <p class="work-description">
-              Worked across the rebranded ShipGuild ecosystem,
+              Worked across ShipGuild's builder and creator ecosystem,
               helping turn technical and early-stage Web3 ideas into
-              content, conversations and distribution.
+              accessible content, conversations and distribution.
             </p>
 
+
             <ul class="work-list">
-              <li>Managed content and social distribution around Web3 and AI products.</li>
-              <li>Supported livestream programming and community engagement.</li>
-              <li>Helped translate technical topics into accessible content for broader audiences.</li>
-              <li>Contributed to ecosystem growth, partnerships and creator-focused distribution.</li>
+
+              <li>
+                Supported content strategy and social distribution
+                around Web3, AI and emerging products.
+              </li>
+
+              <li>
+                Contributed to livestream programming and community
+                engagement.
+              </li>
+
+              <li>
+                Helped translate technical topics into accessible
+                conversations for broader audiences.
+              </li>
+
+              <li>
+                Supported creator-focused distribution and ecosystem
+                growth.
+              </li>
+
+              <li>
+                Contributed to a platform whose X account has grown
+                to 1,900+ followers.
+              </li>
+
             </ul>
 
-            <a
-              href="https://x.com/ShipGuild"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="proof-link"
-            >
-              X / ShipGuild →
-            </a>
+
+            <div class="proof-links">
+
+              <a
+                href="https://x.com/ShipGuild"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proof-link"
+              >
+                X / ShipGuild →
+              </a>
+
+              <a
+                href="https://theshipguild.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proof-link"
+              >
+                ShipGuild →
+              </a>
+
+            </div>
+
+            <p class="proof-note">
+              Selected livestreams have reached 5K+ views.
+            </p>
 
           </article>
 
 
-          <!-- CAPELLA -->
+          <!-- =================================================
+               CAPELLA
+               ================================================= -->
+
           <article class="work-card">
 
             <div class="work-top">
+
               <div>
-                <div class="work-name">Capella</div>
-                <div class="work-role">
-                  Community · Ecosystem · Growth
+
+                <div class="work-name">
+                  Capella
                 </div>
+
+                <div class="work-role">
+                  Core Contributor · Community · Ecosystem · Growth
+                </div>
+
               </div>
 
-              <div class="work-metric">500+ followers</div>
+              <div class="work-metric">
+                341+ users
+              </div>
+
             </div>
 
+
             <p class="work-description">
-              Helped grow Capella, a decentralized hub for creators,
-              through community building, content, ecosystem activation
-              and product distribution.
+              Helped grow Capella, a decentralized creator platform
+              focused on creating, learning, collaborating and
+              monetizing content onchain.
             </p>
 
+
             <ul class="work-list">
-              <li>Built and managed community-facing growth initiatives.</li>
-              <li>Supported creator-focused campaigns and product communication.</li>
-              <li>Helped drive adoption around creator tipping and the broader ecosystem.</li>
-              <li>Supported social growth to 500+ X followers.</li>
+
+              <li>
+                Directed community-facing growth and ecosystem
+                initiatives.
+              </li>
+
+              <li>
+                Built creator-focused campaigns and communication
+                around the product.
+              </li>
+
+              <li>
+                Started and supported creator visibility initiatives,
+                including Creator Spotlight.
+              </li>
+
+              <li>
+                Helped strengthen community engagement and product
+                distribution across the ecosystem.
+              </li>
+
+              <li>
+                Supported Capella's growth to 532 X followers and
+                341+ users.
+              </li>
+
             </ul>
 
-            <a
-              href="https://x.com/capella_dapp"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="proof-link"
-            >
-              X / Capella →
-            </a>
+
+            <div class="proof-links">
+
+              <a
+                href="https://x.com/capella_dApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proof-link"
+              >
+                X / Capella →
+              </a>
+
+              <a
+                href="https://capellaapp.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="proof-link"
+              >
+                Capella →
+              </a>
+
+            </div>
+
+            <p class="proof-note">
+              Community growth update: Capella grew from fewer than
+              90 users to 341+ users.
+            </p>
 
           </article>
+
 
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- =====================================================
+         ABOUT
+         ===================================================== -->
+
     <section id="about" class="section">
 
       <div class="container">
 
-        <div class="section-label">02 / About</div>
+        <div class="section-label">
+          02 / About
+        </div>
 
         <div class="about-grid">
 
           <div>
+
             <h2 class="section-title">
               Growth is more than posting.
             </h2>
+
           </div>
+
 
           <div>
 
             <p class="about-text">
-              My work sits between product, community and distribution.
-              I help Web3 teams communicate what they are building,
-              find the right audiences, activate communities and turn
-              attention into meaningful participation.
+              My work sits between product, community and
+              distribution. I help Web3 teams communicate what
+              they are building, find the right audiences,
+              activate communities and turn attention into
+              meaningful participation.
             </p>
 
             <p class="about-text">
-              My experience spans community management, social strategy,
-              ecosystem growth, partnerships, events, content,
-              project management and AI-enabled workflows.
+              I've worked across community management, social
+              strategy, ecosystem growth, partnerships, events,
+              content, project coordination and AI-enabled
+              workflows.
+            </p>
+
+            <p class="about-text">
+              I care about the part that happens after the post:
+              whether people understand the product, whether they
+              come back, whether communities become contributors,
+              and whether distribution actually compounds.
             </p>
 
           </div>
@@ -479,12 +737,140 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- =====================================================
+         EXPERIENCE
+         ===================================================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-label">
+          03 / Experience
+        </div>
+
+        <h2 class="section-title">
+          Work that compounds across
+          communities and products.
+        </h2>
+
+
+        <div class="work-grid">
+
+
+          <article class="work-card">
+
+            <div class="work-top">
+
+              <div>
+
+                <div class="work-name">
+                  Vesta DAO
+                </div>
+
+                <div class="work-role">
+                  Social Media Manager
+                </div>
+
+              </div>
+
+              <div class="work-metric">
+                +40%
+              </div>
+
+            </div>
+
+            <p class="work-description">
+              Built narrative-driven social content and managed
+              the project's X presence, using curiosity,
+              storytelling and community interaction to improve
+              engagement and visibility.
+            </p>
+
+          </article>
+
+
+          <article class="work-card">
+
+            <div class="work-top">
+
+              <div>
+
+                <div class="work-name">
+                  Cerus
+                </div>
+
+                <div class="work-role">
+                  Social Media Manager
+                </div>
+
+              </div>
+
+              <div class="work-metric">
+                3K+
+              </div>
+
+            </div>
+
+            <p class="work-description">
+              Managed social channels, content and community
+              communication while helping grow the account
+              organically and supporting campaigns that generated
+              measurable commercial activity.
+            </p>
+
+          </article>
+
+
+          <article class="work-card">
+
+            <div class="work-top">
+
+              <div>
+
+                <div class="work-name">
+                  Yeti-Apes
+                </div>
+
+                <div class="work-role">
+                  Head of Community
+                </div>
+
+              </div>
+
+              <div class="work-metric">
+                Community
+              </div>
+
+            </div>
+
+            <p class="work-description">
+              Built and managed community operations, coordinated
+              moderators and acted as a bridge between community
+              members and project leadership.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+
     <section id="contact" class="section">
 
       <div class="container">
 
-        <div class="section-label">03 / Contact</div>
+        <div class="section-label">
+          04 / Contact
+        </div>
 
         <div class="contact-box">
 
@@ -493,8 +879,8 @@
           </h2>
 
           <p class="about-text">
-            I'm open to working with teams building useful products
-            across Web3, AI and emerging technology.
+            I'm open to working with teams building useful
+            products across Web3, AI and emerging technology.
           </p>
 
           <div class="hero-actions">
@@ -508,6 +894,13 @@
               Message me on X →
             </a>
 
+            <a
+              href="mailto:Castraccani@proton.me"
+              class="button"
+            >
+              Email me
+            </a>
+
           </div>
 
         </div>
@@ -519,11 +912,17 @@
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =======================================================
+       FOOTER
+       ======================================================= -->
+
   <footer class="footer">
+
     <div class="container footer-inner">
 
-      <span>CASTRACCANI © 2026</span>
+      <span>
+        CASTRACCANI © 2026
+      </span>
 
       <a
         href="https://x.com/0xcastra"
@@ -534,6 +933,7 @@
       </a>
 
     </div>
+
   </footer>
 
 </body>
